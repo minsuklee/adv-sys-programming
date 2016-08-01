@@ -7,6 +7,6 @@
  
 # 폴더
 
-./gen   : n 개의  m MB의 크기의 text 파일 만들기 (file merge용)
-./merge : merge.c 두개의 파일을 merge 하는 예제 소스 
-./epoll : epoll 예제 소스
+- ./gen   : n 개의  m MB의 크기의 text 파일 만들기 (file merge용)
+- ./merge : merge.c 두개의 파일을 merge 하는 예제 소스 
+- ./epoll : epoll 예제 소스
