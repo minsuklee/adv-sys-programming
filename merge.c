@@ -49,7 +49,7 @@ main(int argc, char *argv[])
     } while (!eof1 || !eof2);
     gettimeofday(&after, NULL);
     duration = (after.tv_sec - before.tv_sec) * 1000000 + (after.tv_usec - before.tv_usec);
-    printf("Processing time = %dusec\n", duration);
+    printf("Processing time = %d.%d sec\n", duration / 1000000, duration % 1000000);
     printf("File1 = %ld, File2= %ld, Total = %ld Lines\n", line1, line2, lineout);
 leave3:
     fclose(fout);
@@ -76,7 +76,6 @@ readaline_and_out(FILE *fin, FILE *fout)
                 break;
             }
         }
-        //printf("%c(0x%02X)", ch, ch);
         fputc(ch, fout);
         count++;
     } while (ch != 0x0a);

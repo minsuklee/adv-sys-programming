@@ -9,4 +9,4 @@ merge : merge.c
 	gcc -g -omerge merge.c
 
 clean:
-	rm -rf *.o a.out gen merge *.dSYM file_*
+	rm -rf gen merge *.o a.out xxx *.dSYM file_*

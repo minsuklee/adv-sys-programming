@@ -74,3 +74,4 @@ usage2: fprintf(stderr, "File size should be >= 0, <= %d\n", MAX_FILE_SIZE);
     }
     return 0;   
 }
+
