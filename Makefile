@@ -1,12 +1,12 @@
 
-all: gen
+all: gen merge
 #sbig fbig mbig
 
 gen : gen.c
 	gcc -g -ogen gen.c
 
-#mbig : mbig.c
-#	gcc -g -ombig mbig.c
+merge : merge.c
+	gcc -g -omerge merge.c
 
 clean:
-	rm -rf *.o a.out gen *.dSYM file_*
+	rm -rf *.o a.out gen merge *.dSYM file_*
