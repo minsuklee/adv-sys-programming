@@ -27,7 +27,13 @@
 *.i*86
 *.x86_64
 *.hex
+gen
+merge
+epoll
 
 # Debug files
 *.dSYM/
 *.su
+
+# generated files
+_file_*
