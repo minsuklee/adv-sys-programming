@@ -56,7 +56,7 @@ usage2: fprintf(stderr, "File size should be >= 0, <= %d\n", MAX_FILE_SIZE);
 
         line = 0;
         wsize = 0;
-        while (wsize < (file_size - 80)) {
+        while (wsize < (file_size - 100)) {
             fprintf(fout, "%04d-%08lX: ", num_file, line);
             tmp = 1 + (random() % 16);
             for (i = 0; i < tmp; i++)
@@ -66,7 +66,7 @@ usage2: fprintf(stderr, "File size should be >= 0, <= %d\n", MAX_FILE_SIZE);
             line++;
         }
         fprintf(fout, "%04d-%08lX: ", num_file, line);
-        for (i = 0; i < (file_size - wsize - 13); i++)
+        for (i = 0; i < (file_size - wsize - 16); i++)
             fputc('-', fout);
         fputc(10, fout);
         fclose(fout);
