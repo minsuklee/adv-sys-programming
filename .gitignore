@@ -37,3 +37,6 @@ epoll
 
 # generated files
 _file_*
+
+# OS files
+.DS_Store
