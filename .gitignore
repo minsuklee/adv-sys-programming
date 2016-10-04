@@ -30,6 +30,7 @@
 gen
 merge
 epoll
+f_out
 
 # Debug files
 *.dSYM/
