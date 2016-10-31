@@ -142,12 +142,14 @@ launch_server(void)
     struct sockaddr_in Addr;
     socklen_t AddrSize = sizeof(Addr);
     char data[MAX_DATA], *p;
-    int ret, count, i;
+    int ret, count, i = 1;
 
     if ((ret = serverSock = socket(PF_INET, SOCK_STREAM, 0)) < 0) {
         perror("socket");
         goto leave;
     }
+
+    setsockopt(serverSock, SOL_SOCKET, SO_REUSEADDR, (void *)&i, sizeof(i));
 
     Addr.sin_family = AF_INET;
     Addr.sin_addr.s_addr = INADDR_ANY;

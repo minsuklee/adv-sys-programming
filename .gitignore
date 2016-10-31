@@ -29,7 +29,7 @@
 *.hex
 gen
 merge
-epoll
+chat
 f_out
 
 # Debug files
