@@ -6,9 +6,8 @@ File
 
 - gen.c   : n 개의  m MB의 크기의 text 파일 만들기 (file merge용)
 - merge.c : merge.c 두개의 파일을 merge 하고 시간을 재는 예제 소스 
-- merge_array.c : 배열을 이용한 함수, 가장 성능이 우수하다.
-- merge_arraystack.c : 배열 스택을 이용한 함수.
-- merge_linkedstack.c : 연결 리스트 스택을 이용한 함수.
+- merge_array.c : 배열을 이용하여 구현한 merge 함수
+- merge_final.c : 최종 수정된 merge 함수
 
 USAGE
 
